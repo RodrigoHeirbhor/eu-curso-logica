@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>IMC Desafio >= </title>
+</head>
+<h1>IMC Desafio >= </h1>
+<!--IMC = Peso / (Altura)2 {Insira 1.72 e 200, 110, 90, 80 e 70} -->
+
+<body>
+    <script>
+        let userPeso = prompt("Insira seu peso");
+        let userAltura = prompt("Insira sua altura");
+
+        let IMC = userPeso / (userAltura * userAltura);
+
+        if (IMC > 40) {
+            alert("Você está com Obesidade Morbida nivel III, seu IMC é " + IMC);
+        } else {
+            if (IMC > 35)
+                alert("Você está com Obesidade Morbida II, seu IMC é " + IMC);
+            else {
+                if (IMC > 30)
+                    alert("Você está acima do peso, seu IMC é " + IMC);
+                else {
+                    if(IMC > 25)
+                       alert("Seu peso está normal, seu IMC é " + IMC);
+                    else {
+                        if(IMC > 17)
+                        alert("Você está abaixo do peso, seu IMC é " + IMC);
+                    }
+                }
+            } 
+        }
+    </script>
+</body>
+
+</html>

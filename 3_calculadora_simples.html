@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Calculadora Simples</title>
+</head>
+
+<h1>Calculadora Simples</h1>
+<body>
+    <script>
+        
+       let x; let n1; let n2;
+
+       x = prompt("Digite uma letra para escolher a operação matemática: (s) Subtração, (m) Multiplicação ou (d) Divisão.");
+
+       n1 = prompt("entre com o primeiro número");
+
+       n2 = prompt("entre com o segundo número");
+
+       alert("O resultado é...");
+       if(x == "s") alert(n1 - n2); //exibimos a subtração
+
+       if(x =="m") alert(n1 * n2); //exibimos a multiplicação
+
+       if(x == "d") alert(n1 / n2); //exibimos a divisão
+
+    </script>
+</body>
+</html>

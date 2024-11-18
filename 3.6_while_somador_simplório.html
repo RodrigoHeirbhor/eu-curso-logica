@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>While - Somador Simplório Infinito</title>
+</head>
+
+<h1>While - Somador Simplório Infinito</h1>
+<!--A função parseInt() em JavaScript serve para converter uma string em um número inteiro: 
+É útil quando se trabalha com dados recebidos como texto, mas que precisam ser processados numericamente-->
+<body>
+    <script>
+        let novaEntradaString = "0";
+        let resultadoSomas = 0;
+
+        let n1;
+
+        while (novaEntradaString != "fim") {
+            novaEntradaString = prompt("Entre com um número para somar, ou digite fim para encerrar");
+
+            n1 = parseInt(novaEntradaString);
+                resultadoSomas = resultadoSomas + n1;
+
+                alert("O resultado até o momento é: " + resultadoSomas);
+             }
+
+
+    </script>
+</body>
+</html>

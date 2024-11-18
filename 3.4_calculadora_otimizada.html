@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Calculadora Otimizada com Else If</title>
+</head>
+
+<h1>Calculadora Otimizada</h1>
+<body>
+<!--Neste codigo a calculadora foi otimizada adicionando o alerta else alert("Operação Inválida"); caso o usuário insira outra coisa no prompt além de a, s, m e d que são as inicias de cada operação matemática-->
+    <script>
+        let operacaoMatematica = prompt("Insira uma letra para escolher o tipo de operação matemática: (a)dição, (s)ubtração, (m)ultiplicação, (d)ivisão");
+
+        let n1 = prompt("Insira o primeiro número");
+
+        let n2 = prompt("Insira o segundo número");
+
+        let opM = operacaoMatematica;
+
+        if(opM == "a") resultado =n1 + n2;
+        else if(opM == "s") resultado =n1 - n2;
+        else if(opM == "m") resultado =n1 * n2;
+        else if(opM == "d") resultado =n1 / n2;
+        else alert("Operação Inválida");
+
+        alert("O resultado é " + resultado);
+
+    </script>
+</body>
+</html>

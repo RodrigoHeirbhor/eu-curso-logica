@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Calculado Switch Otimizada</title>
+</head>
+
+<h1>Calculadora Switch Otimizada</h1>
+<body>
+    <script>
+         let opM = prompt("Digite uma das letras para iniciar sua operação matemática: (a)dição, (s)ubtração, (m)ultiplicação, (d)ivisão");
+
+         let n1 = prompt("Digite o primeiro número");
+         let n2 = prompt("Digite o segundo número");
+         
+        switch(opM) {
+            case "a": resultado = n1 + n2; break;
+            case "s": resultado = n1 - n2; break;
+            case "m": resultado = n1 * n2; break;
+            case "d": resultado = n1 / n2; break;
+
+            default: alert("Operação inválida");
+        }
+            alert("O resultado é " + resultado);
+    </script>
+</body>
+</html>

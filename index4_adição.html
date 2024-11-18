@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Calculadora com Soma/Conversão de Tipos</title>
+</head>
+
+<h1>Calculadora com Soma/Conversão de Tipos</h1>
+<body>
+    <script>
+        
+       let operacaoMatematica = prompt("Digite uma letra para escolher a operação matemática: a(dição), (s)ubtração, (m)ultiplicação ou (d)ivisão.");
+
+       let opM = operacaoMatematica;
+
+       let entradaString1 = prompt("Entre com o primeiro número");
+
+       //converteremos a string entradaString1 no número n1 
+
+       let n1 = parseInt(entradaString1);
+
+       let entradaString2 = prompt("Entre com o segundo número");
+
+       //converteremos a string entradaString2 no número n2
+
+       let n2 = parseInt(entradaString2);
+
+       if(opM == "a") resultado = n1 + n2;
+       
+       if(opM == "s") resultado = n1 - n2;
+
+       if(opM =="m") resultado = n1 * n2; 
+
+       if(opM == "d") resultado = n1 / n2;
+
+       alert("O resultado é  " + resultado);
+
+    </script>
+</body>
+</html>
