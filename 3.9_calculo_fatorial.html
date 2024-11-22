@@ -14,7 +14,21 @@
 </h1>
 <body>
     <script>
+//fatorial é multiplicar um número pelos números anteriores, exceto ele próprio, por exemplo 4: 4*3= 12, 4*2= 8, 4*1= 4
+//o resultado do fatorial de 4 é: 12+8+4 = 24
+
+        let entrada = parseInt(prompt("Insira um número"));
         
+        let resultado = entrada;
+//enquanto a entrada for maior que 1
+        while (entrada > 1) {
+            entrada = entrada - 1;
+
+            resultado = resultado * entrada;
+        }
+
+        alert("O fatorial é " + resultado);
+        // o laço while vai pegar a entrada que é 4 e reduzir em 1, ou seja, será 3 e logo em seguida vai multiplicar 4 vezes 3 e vai reduzir 1 do 3 que agora vai valer 2 e vai multiplicar sendo 4 vezes 2 e logo em seguida vai reduzir 1 do 2 que agoraa vale somente 1 e vai multiplicar o 4 por 1 que vai dá 4 e ai o laço é interrompido pela condição entre parênteses (enquanto a entrada for maior que 1) logo 1 não é maior que 1, então o laço é interrompido encerrando o while dentro dos colchetes e exibindo o proximo codigo que é o alert fora dos colchetes {}
     </script>
 </body>
 </html>
