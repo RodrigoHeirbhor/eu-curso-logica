@@ -11,7 +11,26 @@
 </h1>
 <body>
     <script>
-        
+        function calculaIMC(peso,altura)
+        {
+            let imc = peso /(altura * altura);
+
+            return imc;
+        }
+
+        let peso = prompt("Entre com seu peso");
+        let altura = prompt("Entre com a sua altura");
+        let imc = calculaIMC(peso,altura);
+
+        alert("Seu IMC ficou em " + imc);
+
+        if (imc < 17) alert("Muito abaixo do peso");
+        if ((imc >= 17) && (imc < 18.5)) alert("Você está abaixo do peso");
+        if ((imc >= 18.5) && (imc < 25)) alert("Seu peso está normal");
+        if ((imc >= 25) && (imc < 30)) alert("Você está acima do peso");
+        if ((imc >= 30) && (imc < 35)) alert("Você está com obesidade I");
+        if ((imc >= 35) && (imc < 40)) alert("Você está com obesidade nivel II");
+        if (imc >= 40) alert("Você está com obesidade nivel III");
     </script>
 </body>
 </html>
