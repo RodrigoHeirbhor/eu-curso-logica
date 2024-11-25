@@ -11,15 +11,16 @@
 </h1>
 <body>
     <script>
-        function calculaIMC(peso,altura)
+        function calculaIMC(peso, altura)
         {
-            let imc = peso /(altura * altura);
+            let imc = peso / (altura * altura);
 
             return imc;
         }
+
         let peso = prompt("Entre com seu peso");
         let altura = prompt("Entre com a sua altura");
-        let imc = calculaIMC(peso,altura);
+        let imc = calculaIMC(peso, altura);
 
         alert("Seu IMC ficou em " + imc);
 
