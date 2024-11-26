@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="width=device-width", initial-scale="1.0">
+    <title>
+        Calculo com tres numeros boa pratica LET
+    </title>
+</head>
+<h1>
+    Calculo com tres numeros boa pratica LET
+    </h1>
+    <!--Aqui neste exemplo a variavel global i é externa á function que possui a variavel local i (que está dentro da function). let i = a + b; nada tem a ver com a variavel let i = 1; pois apesar de usarem a mesma letra, são unicas e diferentes. O i fora da funcão é a variavel global ou variavel de escopo e o i dentro da function é a variavel local ou variavel de escopo local-->
+    <body>
+        <script>
+
+            let i = 1;
+
+            function calculoComplexoTresNumeros(a, b, c)
+            {
+                let i = a + b;
+                i = i / 2;
+                i = i + c;
+
+                return(i);
+            }
+
+            alert("Esta é a execução de número " + i);
+
+            alert("Nosso resultado é " + calculoComplexoTresNumeros(1,2,3));
+            alert("Terminamos a execução de número " + i);
+
+            i++;
+
+            alert("Vamos começar a execução de número " + i);
+        </script>
+    </body>
+
+</html>
