@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="width=device-width", initial-scale="1.0">
+        <title>
+            Descobrindo o tipo da variável usando typeof
+        </title>
+    </head>
+    <h1>
+        Descobrindo o tipo da variável usando typeof
+    </h1>
+    <body>
+        <script>
+            let x = "ola";
+            alert(typeof x);
+
+            x = 5;
+            alert(typeof x);
+
+            x = false;
+
+            alert(typeof x);
+
+            x = "5";
+            alert(typeof x);
+
+            if (typeof x == "number") alert("É um número");
+            if (typeof x == "string") alert("É uma string");
+        </script>
+    </body>
+</html>
