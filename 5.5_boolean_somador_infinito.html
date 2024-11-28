@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="width=device-width", initial-scale="1.0">
+        <title>
+            Somador Infinito com Variável Booleana
+        </title>
+    </head>
+    <h1>
+        Somador Infinito com variável Booleana
+    </h1>
+    <body>
+        <script>
+            let testeCondicao = true;
+            let entrada;
+            let resultadoSoma = 0;
+
+            while(testeCondicao) {
+
+                entrada = prompt("Entre com um número");
+                if (entrada == "fim") {
+                    testeCondicao = false;
+                } else {
+                    resultadoSoma += parseInt(entrada);
+                    
+                    if (isNaN(resultadoSoma)) {
+                        testeCondicao = false;
+                    }
+                    else
+                    alert(resultadoSoma);
+                }
+            }
+        </script>
+    </body>
+</html>
