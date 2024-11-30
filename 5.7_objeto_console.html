@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="width=device-width", initial-scale="1.0">
+        <title>
+            Objeto Console em Javascript
+        </title>
+    </head>
+    <h1>
+        Objeto Console em Javascript
+    </h1>
+    <body>
+        <script>
+            function validaPrimo(numero)
+            {
+                let contador = 2;
+                
+                while (contador < (numero+1)/2) {
+                    
+                    if(numero % contador == 0)
+
+                    return false;
+
+                    contador++;
+                }
+                return true;
+            }
+
+            let contadorPrimos = 0;
+
+            let numeroAtual = 2;
+
+            while (contadorPrimos < 100) {
+                if (validaPrimo(numeroAtual)) {
+
+                    console.log(numeroAtual);
+
+                    contadorPrimos++;
+                }
+                numeroAtual++;
+            }
+        </script>
+    </body>
+</html>
