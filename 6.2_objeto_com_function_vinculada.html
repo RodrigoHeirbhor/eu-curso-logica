@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="width=device-width", initial-scale="1.0">
+        <title>
+            Objeto com função vinculada
+        </title>
+        </head>
+        <h1>
+            Objeto com função vinculada
+        </h1>
+        <body>
+            <script>
+                let pessoa = {
+                    nome: "Pedro",
+                    sobrenome: "da Silva",
+
+                    nomeCompleto: function() {
+                        return this.nome + " " + this.sobrenome;
+                    }
+                }
+
+                alert(pessoa.nomeCompleto());
+            </script>
+        </body>
+</html>
