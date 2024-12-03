@@ -14,7 +14,14 @@
         <script>
             let meuPrimeiroArray = [1,2,3]; //array com 3 elementos, nas posições 0,1 e 2
             meuPrimeiroArray[3] =4; //posição 3 recebeu um valor. Array agora tem 4 posições
-            
+            meuPrimeiroArray[4] = 5;//posição 3 recebeu um valor. O array agora tem 5 posições
+
+            let ordemCerta = "";
+
+            for (let i = 0; i < 5; i++) {
+                ordemCerta += meuPrimeiroArray[i] + ",";
+            }
+            console.log(ordemCerta);
         </script>
     </body>
 </html>
