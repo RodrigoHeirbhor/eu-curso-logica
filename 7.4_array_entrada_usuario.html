@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="width=device-width", initial-scale="1.0">
+        <title>
+            Array com entrada do usuário
+        </title>
+    </head>
+    <h1>
+        Array com entrada do usuário
+    </h1>
+    <!--Este array está com um problema e exibe a string "fim" junto com os números. Neste momento não tenho conhecimento técnico suficiente para resolver-->
+    <body>
+        <script>
+
+            let entrada = "";
+
+            let meuArray = [];
+
+            while (entrada != "fim") {
+                entrada = prompt("Entre com valor ou 'fim' para encerrar");
+
+                if(entrada != "fim"); {
+                 
+                   meuArray[meuArray.length] = entrada;
+
+                }
+        }
+
+        ordemErrada = meuArray[meuArray.length-1];
+
+        for(let i = meuArray.length-2; i >= 0; i--) {
+
+            ordemErrada += "," + meuArray[i];
+        }
+
+        alert(ordemErrada);
+
+        </script>
+    </body>
+</html>
